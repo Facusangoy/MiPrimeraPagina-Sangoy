@@ -1,0 +1,13 @@
+{% extends 'clinica/base.html' %}
+{% block content %}
+<h2>Turnos Registrados</h2>
+{% if turnos %}
+<ul class="list-group">
+    {% for turno in turnos %}
+        <li class="list-group-item">{{ turno }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No hay turnos registrados aún.</p>
+{% endif %}
+{% endblock %}

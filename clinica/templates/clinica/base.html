@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Turnos Médicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+    <h1 class="text-center mb-4">Turnos Médicos</h1>
+    <nav class="mb-4 d-flex gap-2 flex-wrap">
+        <a href="/" class="btn btn-primary">Inicio</a>
+        <a href="/nuevo_paciente/" class="btn btn-success">Nuevo Paciente</a>
+        <a href="/nuevo_medico/" class="btn btn-secondary">Nuevo Medico</a>
+        <a href="/nuevo_turno/" class="btn btn-warning">Nuevo Turno</a>
+        <a href="/buscar/" class="btn btn-info">Buscar Turno</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% extends 'clinica/base.html' %}
+{% block content %}
+<h2>Registrar nuevo turno</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-warning">Agendar Turno</button>
+</form>
+{% endblock %}

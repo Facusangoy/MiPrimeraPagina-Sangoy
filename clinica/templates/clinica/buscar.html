@@ -1,0 +1,24 @@
+{% extends 'clinica/base.html' %}
+{% block content %}
+<h2>Buscar Turno por Paciente</h2>
+<form method="post" class="mb-4">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-info">Buscar Turno</button>
+</form>
+
+{% if resultados != None %}
+    {% if resultados %}
+        <h4>Resultados:</h4>
+        <ul class="list-group">
+            {% for turno in resultados %}
+                <li class="list-group-item">{{ turno }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No se encontraron turnos con ese nombre.</p>
+    {% endif %}
+{% endif %}
+{% endblock %}
+
+

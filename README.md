@@ -18,6 +18,7 @@ Ir a "Buscar" y escribir el nombre de un paciente para buscarlo.
 ## Apartado /admin
 
 Nombre: Facu
+
 Contaseña: 1234
 
 Aqui podran ver la base de datos, los pacientes, medicos y turnos cargados.

@@ -5,7 +5,7 @@ Esta pagina, simula una clínica donde se pueden cargar pacientes, médicos y tu
 ## ¿Que tiene?
 
 - Herencia de plantillas
-- 4 clases en models: Paciente, Medico, Turno, Bsucar turno.
+- 4 clases en models: Paciente, Medico, Turno, Buscar turno.
 - Formularios para cargar datos de cada uno, incluyendo el tiempo y dia.
 - Un formulario para buscar pacientes en la base de datos.
 
